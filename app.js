@@ -27,7 +27,7 @@ app.use(cookieParser());
 app.use('/', index);
 app.use('/users', users);
 app.get('/hikes', hike.index);
-app.post('/add_hike', hike.add_hike); // This is for web api callbacks
+app.post('/add_hike', hike.add_hike); // Web Api Set Up
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
